@@ -44,23 +44,6 @@ class operator_commands(commands.Cog):
         time.sleep(1)
         exit()
 
-    @commands.command(name='infolog')
-    async def infolog(self, ctx):
-        if str(ctx.author.id) not in self.operators:
-            return
-        with open('system/info_log.txt', 'r') as file:
-            file = file.readlines()
-            if not file:
-                info_log = 'No system reports'
-            else:
-                info_log = ''.join(file)
-
-            if len(info_log) >= 1000:
-                info_log = 'system log is too long!\nplease clear cache or restart capybasil'
-
-            em = discord.Embed(title = 'System log', description = f'```{info_log}```')
-            await ctx.send(embed=em)
-
     @commands.command(name='clear-cache')
     async def clear_cache(self, ctx):
         with open('system/error_log.txt', 'w') as file:

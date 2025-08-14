@@ -21,8 +21,8 @@ class feature_toggler(commands.Cog):
             await ctx.send('this command is only available in servers!')
             return
 
-        feature_list = ['patch', 'welcome', 'reactions']
-        feature_desc = ['patch note announcements', 'welcome messages', 'capybasil message reactions']
+        feature_list = ['welcome', 'reactions']
+        feature_desc = ['welcome messages', 'capybasil message reactions']
         opt_list = ''
 
         if feature not in feature_list:
