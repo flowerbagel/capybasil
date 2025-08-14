@@ -1,0 +1,83 @@
+OPTIONAL arguments are in (parenthesis)
+REQUIRED arguments are in [brackets]
+
+usage: `help (topic)` Show this page
+
+> for info about general commands use `help general`
+> for info about images and filters use `help image`
+> for info about time based commands use `help time`
+{zabloing}
+~~~
+
+OPTIONAL arguments are in (parenthesis)
+REQUIRED arguments are in [brackets]
+
+`toggle (feature)`: enables/disables features for your server, you will need administrator permissions
+`ping` See capybasil's latency
+`test` Returns 'hello world!'
+`uptime` Shows capybasil's uptime
+`invite` Invite link for capybasil
+
+`boowhomp` Spunch bop woowhomp
+`case [input]` ReTurNS iNPUt lIKe tHiS
+`clap [input]` RETURNS👏INPUT👏LIKE👏THIS
+`cry` Cry with capybasil
+`demise (user)` Cause the unfortunate demise of someone
+`doom` Link to doom shareware
+`door` Picture of a door
+`8ball [question]` Ask a question and the ball will answer
+`gift` Recieve a gift from capybasil
+`meter [subject] (user)`
+`motivation` Recieve some motivation from capybasil
+`nothing` It doesnt do anything...
+`reba` Reba Nell McEntire, i dont even know
+`rebar` Rebar
+`roll [number]` Choose a random number between 1 and [number]
+`rps [selection]` Play rock paper scissors with capybasil
+`scrub [link]` Remove the tracking token from a youtube link
+`sort [words]` Sort a list of words in alphabetical order
+~~~
+OPTIONAL arguments are in (parenthesis)
+REQUIRED arguments are in [brackets]
+
+> Timers set with capybasil are *NOT REDUNDANT*
+> Do not rely on timers for anything important!
+
+`noodle`: set a timer for 5 minutes
+`remind [seconds] [message]`: set a timer
+`tea`: Set a timer for 3 minutes
+~~~
+OPTIONAL arguments are in (parenthesis)
+REQUIRED arguments are in [brackets]
+
+**Colors**
+`confetti` Colorful static
+`dailycolor` Show today's special color
+`getcolor [hex code]` Generate a color swatch
+`randomcolor` Generate a random color swatch
+`static [color1] [color2]` Generate static with 2 colors
+
+**Filters**
+
+`brick` Put bricks on an image
+`control` converts an image to .png
+`emboss` Emboss filter
+`invert` Invert an image
+`1bit` Binarize an image
+`pfp (user)` Get a profile picture
+`server-pfp` Get the server profile picture
+`sharp (intensity; light, medium, heavy)` Sharpness filter
+`2tone (color1) (color2)` recolor an image with 2 colors
+`vibe (intensity; light, medium, heavy)` Vibrance filter
+~~~
+OPTIONAL arguments are in (parenthesis)
+REQUIRED arguments are in [brackets]
+
+> A zabloing is a piece of text, and can include links to websites, images, videos, etc.
+> The zabloing command will only work in approved servers.
+> Zabloings are *global* and can be seen by anyone in an approved server.
+
+`zabloing (number)`: Get a zabloing
+`zabloing-count`: Show the total number of zabloings
+`zabloing-search (query)`: Search for a zabloing containing (query)
+`zabloing-add`: Add a zabloing
