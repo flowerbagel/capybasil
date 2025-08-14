@@ -28,9 +28,6 @@ def logreset():
     with open('system/error_log.txt', 'w') as file:
         console.log('✔ Error log cleared', style = 'bold cyan')
 
-    with open('system/info_log.txt', 'w') as file:
-        console.log('✔ Info log cleared', style = 'bold cyan')
-
     with open('assets/dailycolor.txt', 'w') as file:
         file.write('UNCHOSEN')
         console.log('✔ Daily color cleared', style = 'bold cyan')
