@@ -8,7 +8,6 @@ import asyncio
 import datetime
 from io import BytesIO
 from system.settings import CB_VERSION, CB_ZABLOING_TRUSTED
-from PIL import Image, ImageDraw, ImageFont
 
 class general_commands(commands.Cog):
     def __init__(self, client):
@@ -94,10 +93,20 @@ class general_commands(commands.Cog):
         word_list = '\n'.join(word_list)
         await ctx.send(f'ding!\n```\n{word_list}```')
 
+    @commands.hybrid_command(name='echo', description='make capybasil send a message to a channel')
+    @has_permissions(administrator=True)
+    @commands.cooldown(20,60,commands.BucketType.user)
+    async def echo(self, ctx, target_channel: int, *, message: str):
+        channel = self.client.get_channel(target_channel)
+        if channel.guild != ctx.guild:
+            await ctx.send('echoed message must be in the same server!')
+            return
+        await channel.send(str(message))
+
     @commands.hybrid_command(name='basil', description='basil')
     @commands.cooldown(20,60,commands.BucketType.user)
     async def basil(self, ctx):
-        await ctx.send('this is where i would send basil')
+        await ctx.send('it\'s me!')
 
     #Ping command
     @commands.hybrid_command(name='ping', description='Pings capybasil')
